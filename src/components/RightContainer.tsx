@@ -141,23 +141,28 @@ function RightContainer({
               ))}
             </Swiper>
           ) : (
-            <Swiper
-              spaceBetween={25}
-              slidesPerView={2}
-              centeredSlides={true}
-              loop={true}
-              speed={600}
-              autoplay={{
-                delay: 3000,
-              }}
-              modules={[Autoplay]}
-            >
-              {items?.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <CollectiblesCard {...item} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div>
+              <h2 className="text-md text-white font-bold pb-4">
+                Collectibles
+              </h2>
+              <Swiper
+                spaceBetween={25}
+                slidesPerView={2}
+                centeredSlides={true}
+                loop={true}
+                speed={600}
+                autoplay={{
+                  delay: 3000,
+                }}
+                modules={[Autoplay]}
+              >
+                {items?.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <CollectiblesCard {...item} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           )}
         </div>
       </div>
