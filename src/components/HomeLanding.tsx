@@ -3,20 +3,19 @@
 import React, { useState } from "react";
 import LeftContainer from "./LeftContainer";
 import RightContainer from "./RightContainer";
-import { StaticImageData } from "next/image";
 
-const Barbe = "/images/Barbe.png";
-const Girl = "/images/Girl.png";
-const LunarPlace = "/images/Lunar Place.png";
-const Virtual = "/images/Virtual.png";
-const Djman = "/images/Djman.png";
-const Colacup = "/images/Colacup.png";
+import Barbe from "../../public/Images/Barbe.png";
+import Girl from "../../public/Images/Girl.png";
+import LunarPlace from "../../public/Images/Lunar Place.png";
+import Virtual from "../../public/Images/Virtual.png";
+import Djman from "../../public/Images/Djman.png";
+import Colacup from "../../public/Images/Colacup.png";
 
-const Artist1 = "/images/Artist1.png";
-const Artist2 = "/images/Artist2.png";
-const Artist3 = "/images/Artist3.png";
+import Artist1 from "../../public/Images/Artist1.png";
+import Artist2 from "../../public/Images/Artist2.png";
+import Artist3 from "../../public/Images/Artist3.png";
 
-const PeopleGroup: string = "/Images/PeopleGroup.png";
+import PeopleGroup from "../../public/Images/PeopleGroup.png";
 
 const leftContentEvent = {
   title: `ASTRIX EVENTS`,

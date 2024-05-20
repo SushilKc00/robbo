@@ -27,7 +27,7 @@ export interface RightDataProps {
   };
   sliderTitle?: string;
   images?: {
-    src: string;
+    src: string | StaticImageData;
     alt: string;
   }[];
 
@@ -56,10 +56,12 @@ function RightContainer({
 }: RightDataProps) {
   return (
     <section className="relative h-full">
+      {/* Heading top */}
       <div className="lg:px-32 px-6 lg:py-6 pt-14">
         <h2 className="text-[2rem] font-bold text-white">{heading}</h2>
       </div>
 
+      {/* Subheading and descendant content  */}
       <div className="lg:px-32 px-6 flex flex-col gap-5 mt-6">
         {currentTab == "events" ? (
           <h2 className="text-white font-extrabold font-lexend text-[3.4rem] leading-[3.8rem]">
@@ -71,6 +73,7 @@ function RightContainer({
           </h2>
         )}
 
+        {/* Events  */}
         {event && (
           <div className="flex md:flex-row flex-col items-center md:gap-12 gap-4">
             <span className="text-white text-xl font-semibold flex items-center gap-2">
@@ -83,10 +86,13 @@ function RightContainer({
             </span>
           </div>
         )}
+
         {title && <h3 className="text-white font-bold font-lexend">{title}</h3>}
+        {/* discriptiopn  */}
 
         <p className="text-white font-lexend">{description}</p>
 
+        {/* PeopleGroup  */}
         {peopleGroup && (
           <div className="flex gap-2 items-center">
             <Image
@@ -100,12 +106,12 @@ function RightContainer({
             </p>
           </div>
         )}
-
         {sliderTitle && (
           <h3 className="text-white text-2xl font-bold">{sliderTitle}</h3>
         )}
       </div>
 
+      {/* slider of events and collections */}
       <div className="lg:pl-32 pl-6 mt-16">
         <div className="w-full relative">
           {currentTab == "events" ? (
@@ -155,7 +161,8 @@ function RightContainer({
         </div>
       </div>
 
-      <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-10 lg:pl-32 pl-5 pr-4">
+      {/* QR and join watchlist */}
+      <div className="flex md:flex-row flex-col gap-4 md:items-center md:justify-between mt-10 lg:pl-32 pl-5 pr-4 py-2">
         <div>
           <div className="flex justify-center">
             <Image
@@ -172,7 +179,8 @@ function RightContainer({
         </button>
       </div>
 
-      <div className="absolute top-0 left-0 lg:h-full h-10 lg:w-14 w-full bg-[#b9a0ff] flex lg:flex-col gap-6 justify-center lg:text-xl text-sm font-semibold items-center text-black">
+      {/* Stripe  */}
+      <div className="absolute top-0 left-0 lg:h-full h-10 lg:w-14 w-full bg-[#b9a0ff] flex lg:flex-col gap-6 justify-center lg:text-xl text-sm  font-semibold items-center text-black">
         <p className="vertical-text-orientaiton text-center stripe-animate">
           Bus tour , JLN Stadium , Delhi
         </p>

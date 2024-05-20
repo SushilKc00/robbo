@@ -30,7 +30,7 @@ function Slider({ Images }: SliderProps) {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 30,
+          depth: 35,
         }}
         modules={[Autoplay, EffectCoverflow]}
         className="w-full mx-auto"
