@@ -6,7 +6,8 @@ import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-const Qr = "/images/Qr.png";
+import Qr from "../../public/Images/Qr.png";
+
 export interface RightDataProps {
   currentTab: string;
   setCurrentTab: Dispatch<SetStateAction<string>>;
