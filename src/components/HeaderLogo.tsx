@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-const AstrixBrand = "/images/Astrix Branding.png";
-const AstrixBrandLogo = "/images/Logo.png";
+import AstrixBrand from "../../public/Images/Astrix Branding.png";
+import AstrixBrandLogo from "../../public/Images/Logo.png";
 
 function HeaderLogo() {
   return (
